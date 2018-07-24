@@ -9,19 +9,32 @@ public class Product {
 	enum Size {
 		SMALL, MEDIUM, LARGE, YUGE
 	}
+	
+	enum Price {
+		AFFORDABLE, EXPENSIVE, INSANE
+	}
 
 	public String name;
 	public Color color;
 	public Size size;
+	public Price price;
 	
+	//Tutorial implements products with only name color and size.
 	public Product(String name, Color color, Size size) {
 		this.name = name;
 		this.color = color;
 		this.size = size;
 	}
 	
-	// G&S
+	//Going to add more functionality to see if I grasped the subject completely.
+	public Product(String name, Color color, Size size, Price price) {
+		this.name = name;
+		this.color = color;
+		this.size = size;
+		this.price = price;
+	}
 	
+	// G&S
 	public String getName() {
 		return name;
 	}

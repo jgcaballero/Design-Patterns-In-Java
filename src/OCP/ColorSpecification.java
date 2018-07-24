@@ -9,8 +9,8 @@ public class ColorSpecification implements Specification<Product> {
 	}
 	
 	@Override
-	public boolean isSatisfied(Product item) {
-		return item.color == color;
+	public boolean isSatisfied(Product p) {
+		return p.color == color;
 	}
 	
 }
