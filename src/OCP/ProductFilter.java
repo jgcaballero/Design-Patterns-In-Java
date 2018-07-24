@@ -1,9 +1,10 @@
+package OCP;
 import java.util.List;
 import java.util.stream.Stream;
 
 
 
-class ProductFilter {
+public class ProductFilter {
 		
 	public Stream<Product> filterByColor (List<Product> products, Product.Color color){
 		return products.stream().filter(p -> p.color == color);

@@ -1,5 +1,6 @@
+package OCP;
 
-class Product {
+public class Product {
 	
 	enum Color {
 		RED, GREEN, BLUE
@@ -10,7 +11,7 @@ class Product {
 	}
 
 	public String name;
-	public static Color color;
+	public Color color;
 	public Size size;
 	
 	public Product(String name, Color color, Size size) {
@@ -44,6 +45,13 @@ class Product {
 	public void setSize(Size size) {
 		this.size = size;
 	}
+
+	@Override
+	public String toString() {
+		return "Product [name=" + name + ", size=" + size + "]";
+	}
+	
+	
 	
 
 }
